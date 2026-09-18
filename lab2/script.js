@@ -69,8 +69,8 @@ console.log("\n--- Перевірка Truck ---");
 let truck1 = new Truck("blue", 6000, 80.5, "Scania", "R500");
 let truck2 = new Truck("silver", 5500, 75.0, "Volvo", "FH16");
 
-truck1.AssignDriver("Іван Петренко", true, 6);
-truck2.AssignDriver("Василь Сидорчук", false, 3);
+truck1.AssignDriver("Богдан Бачинський", true, 6);
+truck2.AssignDriver("Богдан Бачинський", false, 3);
 
 truck1.trip();
 truck2.trip();
