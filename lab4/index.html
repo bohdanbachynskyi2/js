@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторна робота №4</title>
+</head>
+<body>
+    <h1>Лабораторна робота №4</h1>
+    <p>Результати роботи алгоритмів виводяться у консоль розробника (натисніть F12 -> вкладка Console).</p>
+
+   
+    <script src="sortLibrary.js"></script>
+
+    
+    <script>
+        function getRandomInt(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+       
+        let regularArray = [];
+        for (let i = 0; i < 100; i++) {
+            regularArray.push(getRandomInt(1, 500));
+        }
+
+        let sparseArray = new Array(100);
+        for (let i = 0; i < 100; i += 3) {
+            sparseArray[i] = getRandomInt(1, 500);
+        }
+
+        console.log("=== ТЕСТ 1: НЕРОЗРІДЖЕНИЙ МАСИВ (ЗРОСТАННЯ) ===");
+        MySortLib.bubbleSort(regularArray, true);
+        MySortLib.selectionSort(regularArray, true);
+        MySortLib.insertionSort(regularArray, true);
+        MySortLib.shellSort(regularArray, true);
+        MySortLib.quickSort(regularArray, true);
+
+        console.log("\n=== ТЕСТ 2: РОЗРІДЖЕНИЙ МАСИВ (СПАДАННЯ) ===");
+        MySortLib.bubbleSort(sparseArray, false);
+        MySortLib.selectionSort(sparseArray, false);
+        MySortLib.insertionSort(sparseArray, false);
+        MySortLib.shellSort(sparseArray, false);
+        MySortLib.quickSort(sparseArray, false);
+    </script>
+</body>
+</html>
