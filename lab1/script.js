@@ -1,5 +1,5 @@
 
-console.log("=== ІНСТРУКЦІЯ ДО ФУНКЦІЇ triangle ===");
+console.log("   ІНСТРУКЦІЯ ДО ФУНКЦІЇ triangle ");
 console.log("Функція обчислює сторони прямокутного трикутника та його гострі кути.");
 console.log("Виклик: triangle(val1, 'type1', val2, 'type2')");
 console.log("Можливі типи значень:");
@@ -8,7 +8,7 @@ console.log(" - 'hypotenuse': гіпотенуза");
 console.log(" - 'adjacent angle': прилеглий до катета кут (у градусах)");
 console.log(" - 'opposite angle': протилежний до катета кут (у градусах)");
 console.log(" - 'angle': гострий кут при заданій гіпотенузі (у градусах)");
-console.log("======================================");
+
 
 function triangle(val1, type1, val2, type2) {
     
